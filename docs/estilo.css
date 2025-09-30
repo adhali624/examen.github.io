@@ -1,1 +1,88 @@
 
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(156, 75, 194); 
+}
+
+.contenedor {
+    perspective: 250px;
+    width: 300px;
+    height: 150px;
+    position: relative;
+}
+
+.tarjeta {
+    width: 50px;
+    height: 100px;
+    background-color: rgb(230, 218, 55);
+    font-size: 40px;
+    position: absolute;
+    top: 35px;
+    left: 125px;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    animation: Carrusel 8s linear infinite;
+}
+
+@keyframes Carrusel {
+    from {
+        transform: rotateY(360deg) translateZ(100px);
+        z-index: 10;
+        opacity: 0.9;
+    }
+    50% {
+        z-index: -10;
+    }
+    to {
+        transform: rotateX(0deg) translateZ(100px);
+    }
+}
+
+
+#AMOR {
+    background-image: url(im/AMOR.jpg);
+    background-size: cover;
+    background-position: center;
+    animation-delay: -0s;
+}
+
+#FLYNN {
+    background-image: url(im/FLYNN.jpg);
+    background-size: cover;
+    background-position: center;
+    animation-delay: -2s;
+}
+
+#PASCAL {
+    background-image: url(im/PASCAL.png);
+    background-size: cover;
+    background-position: center;
+    animation-delay: -4s;
+}
+
+#RAPUNZEL {
+    background-image: url(im/RAPUNZEL.webp);
+    background-size: cover;
+    background-position: center;
+    animation-delay: -6s;
+}
+
+
+#AMOR:hover,
+#FLYNN:hover,
+#PASCAL:hover,
+#RAPUNZEL:hover {
+    box-shadow: 0px 0px 10px rgb(187, 187, 187);
+}
+
+.tarjeta h3 {
+    color: rgb(0, 0, 0);
+    font-size: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 70px;
+    background-color: #ae2ac9;
+}
