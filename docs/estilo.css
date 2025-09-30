@@ -44,28 +44,28 @@ body {
 
 
 #AMOR {
-    background-image: url(im/AMOR.jpg);
+    background-image: url(img/AMOR.jpg);
     background-size: cover;
     background-position: center;
     animation-delay: -0s;
 }
 
 #FLYNN {
-    background-image: url(im/FLYNN.jpg);
+    background-image: url(img/FLYNN.jpg);
     background-size: cover;
     background-position: center;
     animation-delay: -2s;
 }
 
 #PASCAL {
-    background-image: url(im/PASCAL.png);
+    background-image: url(img/PASCAL.png);
     background-size: cover;
     background-position: center;
     animation-delay: -4s;
 }
 
 #RAPUNZEL {
-    background-image: url(im/RAPUNZEL.webp);
+    background-image: url(img/RAPUNZEL.webp);
     background-size: cover;
     background-position: center;
     animation-delay: -6s;
